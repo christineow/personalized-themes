@@ -1,0 +1,85 @@
+:root {
+  --mainText: black;
+
+  --s1BackgroundColor: white;
+  --s2Backgroundcolor: #c7c7c1;
+
+  --themeDotBorder: black;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h5,
+p {
+  color: var(--mainText);
+}
+
+body * {
+  transition: 0.3s;
+}
+
+.s1 {
+  background-color: var(--s1BackgroundColor);
+  overflow: auto;
+}
+
+.s2 {
+  background-color: var(--s2Backgroundcolor);
+}
+
+.image-section {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  padding: 15px;
+}
+
+.theme-options-wrapper {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.theme-dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+
+  -webkit-box-shadow: 10px 10px 28px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 28px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 28px 2px rgba(0, 0, 0, 0.75);
+
+  margin: 5px;
+  border: 2px solid var(--themeDotBorder);
+
+  cursor: pointer;
+}
+.theme-dot:hover {
+  border-width: 5px;
+}
+#light-mode {
+  background-color: white;
+}
+#dark-mode {
+  background-color: #0b0a0a;
+}
+#green-mode {
+  background-color: #7f998c;
+}
+#pink-mode {
+  background-color: #a1577c;
+}
+#brown-mode {
+  background-color: #4b2c2c;
+}
+
+#settings-note {
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+}
